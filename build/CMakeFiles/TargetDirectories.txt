@@ -1,0 +1,3 @@
+/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/rebuild_cache.dir
+/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/graphics_asgn1.dir
+/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/edit_cache.dir
