@@ -16,6 +16,16 @@ main.h
 main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 
+/home/mayank/Study/Graphics/jetpack_opengl/src/coin.cpp
+coin.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/coin.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/coin.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
 /home/mayank/Study/Graphics/jetpack_opengl/src/color.cpp
 main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
@@ -45,12 +55,16 @@ main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.cpp
 main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
-timer.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
 ball.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/ball.h
 platform.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/platform.h
+wall.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/wall.h
+coin.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/coin.h
+cstdlib
+-
 
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 iostream
@@ -71,6 +85,8 @@ glm/gtx/transform.hpp
 -
 glm/gtc/matrix_transform.hpp
 -
+timer.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
 
 /home/mayank/Study/Graphics/jetpack_opengl/src/nonedit.cpp
 iostream
@@ -133,4 +149,14 @@ GLFW/glfw3.h
 -
 
 /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/wall.cpp
+wall.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/wall.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/wall.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mayank/Study/Graphics/jetpack_opengl/src/ball.cpp" "/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o"
+  "/home/mayank/Study/Graphics/jetpack_opengl/src/coin.cpp" "/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o"
   "/home/mayank/Study/Graphics/jetpack_opengl/src/color.cpp" "/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/graphics_asgn1.dir/src/color.cpp.o"
   "/home/mayank/Study/Graphics/jetpack_opengl/src/input.cpp" "/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
   "/home/mayank/Study/Graphics/jetpack_opengl/src/main.cpp" "/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
@@ -12,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mayank/Study/Graphics/jetpack_opengl/src/other_handlers.cpp" "/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
   "/home/mayank/Study/Graphics/jetpack_opengl/src/platform.cpp" "/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o"
   "/home/mayank/Study/Graphics/jetpack_opengl/src/timer.cpp" "/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
+  "/home/mayank/Study/Graphics/jetpack_opengl/src/wall.cpp" "/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
