@@ -13,6 +13,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtx/transform.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include "timer.h"
 
 struct color_t {
     int r;
@@ -71,15 +72,37 @@ struct bounding_box_t {
     float height;
 };
 
+struct line_segment_t {
+    float x1;
+    float y1;
+    float x2;
+    float y2;
+};
+
+struct point_t{
+    float x;
+    float y;
+};
+
 bool detect_collision(bounding_box_t a, bounding_box_t b);
+bool detect_collision(bounding_box_t a, line_segment_t b);
+float distance(point_t u, point_t v, point_t p);
 
 extern float screen_zoom, screen_center_x, screen_center_y;
 void reset_screen();
+
+
 
 // ---- Colors ----
 extern const color_t COLOR_RED;
 extern const color_t COLOR_GREEN;
 extern const color_t COLOR_BLACK;
 extern const color_t COLOR_BACKGROUND;
+extern const color_t COLOR_YELLOW;
+extern const color_t COLOR_BLUEGRAY;
+extern const color_t COLOR_LIGHTGRAY;
+extern const color_t COLOR_GRAY;
+extern const color_t COLOR_ORANGE;
+extern const color_t COLOR_DARKGRAY;
 
 #endif

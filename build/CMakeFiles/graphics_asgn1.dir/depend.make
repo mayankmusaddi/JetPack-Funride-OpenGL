@@ -15,12 +15,31 @@ CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/color.cpp
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/timer.h
 
+CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o: ../src/firebeam.cpp
+CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o: ../src/firebeam.h
+CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o: ../src/timer.h
+
+CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o: ../src/fireline.cpp
+CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o: ../src/fireline.h
+CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o: ../src/timer.h
+
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/input.cpp
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/timer.h
 
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/ball.h
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/magnet.cpp
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/magnet.h
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/timer.h
+
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/ball.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/coin.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/firebeam.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/fireline.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/magnet.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/platform.h

@@ -15,13 +15,32 @@ CMakeFiles/graphics_asgn1.dir/src/color.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/color.cpp
  /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o
+ /home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.cpp
+ /home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o
+ /home/mayank/Study/Graphics/jetpack_opengl/src/fireline.cpp
+ /home/mayank/Study/Graphics/jetpack_opengl/src/fireline.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/input.cpp
+ /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o
+ /home/mayank/Study/Graphics/jetpack_opengl/src/ball.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/magnet.cpp
+ /home/mayank/Study/Graphics/jetpack_opengl/src/magnet.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/ball.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/coin.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/fireline.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/magnet.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/main.cpp
  /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/platform.h

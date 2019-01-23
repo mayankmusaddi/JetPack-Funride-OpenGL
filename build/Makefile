@@ -204,6 +204,60 @@ src/color.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/color.cpp.s
 .PHONY : src/color.cpp.s
 
+src/firebeam.o: src/firebeam.cpp.o
+
+.PHONY : src/firebeam.o
+
+# target to build an object file
+src/firebeam.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o
+.PHONY : src/firebeam.cpp.o
+
+src/firebeam.i: src/firebeam.cpp.i
+
+.PHONY : src/firebeam.i
+
+# target to preprocess a source file
+src/firebeam.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.i
+.PHONY : src/firebeam.cpp.i
+
+src/firebeam.s: src/firebeam.cpp.s
+
+.PHONY : src/firebeam.s
+
+# target to generate assembly for a file
+src/firebeam.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.s
+.PHONY : src/firebeam.cpp.s
+
+src/fireline.o: src/fireline.cpp.o
+
+.PHONY : src/fireline.o
+
+# target to build an object file
+src/fireline.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o
+.PHONY : src/fireline.cpp.o
+
+src/fireline.i: src/fireline.cpp.i
+
+.PHONY : src/fireline.i
+
+# target to preprocess a source file
+src/fireline.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.i
+.PHONY : src/fireline.cpp.i
+
+src/fireline.s: src/fireline.cpp.s
+
+.PHONY : src/fireline.s
+
+# target to generate assembly for a file
+src/fireline.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.s
+.PHONY : src/fireline.cpp.s
+
 src/input.o: src/input.cpp.o
 
 .PHONY : src/input.o
@@ -230,6 +284,33 @@ src/input.s: src/input.cpp.s
 src/input.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/input.cpp.s
 .PHONY : src/input.cpp.s
+
+src/magnet.o: src/magnet.cpp.o
+
+.PHONY : src/magnet.o
+
+# target to build an object file
+src/magnet.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o
+.PHONY : src/magnet.cpp.o
+
+src/magnet.i: src/magnet.cpp.i
+
+.PHONY : src/magnet.i
+
+# target to preprocess a source file
+src/magnet.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.i
+.PHONY : src/magnet.cpp.i
+
+src/magnet.s: src/magnet.cpp.s
+
+.PHONY : src/magnet.s
+
+# target to generate assembly for a file
+src/magnet.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.s
+.PHONY : src/magnet.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -411,9 +492,18 @@ help:
 	@echo "... src/color.o"
 	@echo "... src/color.i"
 	@echo "... src/color.s"
+	@echo "... src/firebeam.o"
+	@echo "... src/firebeam.i"
+	@echo "... src/firebeam.s"
+	@echo "... src/fireline.o"
+	@echo "... src/fireline.i"
+	@echo "... src/fireline.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"
+	@echo "... src/magnet.o"
+	@echo "... src/magnet.i"
+	@echo "... src/magnet.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
