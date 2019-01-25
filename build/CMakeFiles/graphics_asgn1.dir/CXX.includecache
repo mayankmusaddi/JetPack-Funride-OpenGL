@@ -16,6 +16,18 @@ main.h
 main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 
+/home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.cpp
+boomerang.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+iostream
+-
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
 /home/mayank/Study/Graphics/jetpack_opengl/src/coin.cpp
 coin.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/coin.h
@@ -101,6 +113,12 @@ fireline.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/fireline.h
 firebeam.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.h
+powerup.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/powerup.h
+water.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/water.h
+boomerang.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.h
 cstdlib
 -
 
@@ -180,6 +198,18 @@ main.h
 main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 
+/home/mayank/Study/Graphics/jetpack_opengl/src/powerup.cpp
+powerup.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/powerup.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+iostream
+-
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/powerup.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
 /home/mayank/Study/Graphics/jetpack_opengl/src/timer.cpp
 timer.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
@@ -195,6 +225,18 @@ main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 
 /home/mayank/Study/Graphics/jetpack_opengl/src/wall.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/water.cpp
+water.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/water.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+iostream
+-
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/water.h
 main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 

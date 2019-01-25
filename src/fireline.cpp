@@ -5,6 +5,7 @@ Fireline::Fireline(float x, float y, int angle, color_t color) {
     this->position = glm::vec3(x, y, 0);
     this->rotation = angle;
     this->radius = 0.03f;
+    this->state = 1;
 
     int k=0;
     int n=20;
@@ -64,7 +65,8 @@ void Fireline::draw(glm::mat4 VP) {
     Matrices.model *= (translate * rotate);
     glm::mat4 MVP = VP * Matrices.model;
     glUniformMatrix4fv(Matrices.MatrixID, 1, GL_FALSE, &MVP[0][0]);
-    draw3DObject(this->object2);
+    if(this->state)
+        draw3DObject(this->object2);
     draw3DObject(this->object1);
     draw3DObject(this->object3);
 }

@@ -6,6 +6,11 @@ CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o: ../src/ball.h
 CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o: ../src/timer.h
 
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o: ../src/boomerang.cpp
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o: ../src/boomerang.h
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o: ../src/timer.h
+
 CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o: ../src/coin.cpp
 CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o: ../src/coin.h
 CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o: ../src/main.h
@@ -36,6 +41,7 @@ CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/timer.h
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/ball.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/boomerang.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/coin.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/firebeam.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/fireline.h
@@ -43,8 +49,10 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/magnet.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/platform.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/powerup.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/timer.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/wall.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/water.h
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: ../src/nonedit.cpp
@@ -59,6 +67,11 @@ CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o: ../src/platform.cpp
 CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o: ../src/platform.h
 CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o: ../src/timer.h
 
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o: ../src/powerup.cpp
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o: ../src/powerup.h
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o: ../src/timer.h
+
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.cpp
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.h
 
@@ -66,4 +79,9 @@ CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o: ../src/timer.h
 CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o: ../src/wall.cpp
 CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o: ../src/wall.h
+
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.o: ../src/timer.h
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.o: ../src/water.cpp
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.o: ../src/water.h
 

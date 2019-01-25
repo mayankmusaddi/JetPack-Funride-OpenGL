@@ -19,8 +19,6 @@ public:
     void move_up();
     void tick();
     double speed;
-    double releaseTime;
-    double deathTime;
 private:
     VAO *object;
 };

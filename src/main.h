@@ -91,7 +91,9 @@ float distance(point_t u, point_t v, point_t p);
 extern float screen_zoom, screen_center_x, screen_center_y;
 void reset_screen();
 
-
+extern float gravity;
+extern float ground;
+extern double tm;
 
 // ---- Colors ----
 extern const color_t COLOR_RED;
@@ -104,5 +106,6 @@ extern const color_t COLOR_LIGHTGRAY;
 extern const color_t COLOR_GRAY;
 extern const color_t COLOR_ORANGE;
 extern const color_t COLOR_DARKGRAY;
+extern const color_t COLOR_BLUE;
 
 #endif

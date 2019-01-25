@@ -6,6 +6,10 @@
 #include "magnet.h"
 #include "fireline.h"
 #include "firebeam.h"
+#include "powerup.h"
+#include "water.h"
+#include "boomerang.h"
+// Include any new component here
 #include <cstdlib> // for rand() function
 
 using namespace std;
@@ -14,13 +18,9 @@ GLMatrices Matrices;
 GLuint     programID;
 GLFWwindow *window;
 
-/**************************
-* Customizable functions *
-**************************/
 long long dist=0;
 long long score=0;
 long long life=5;
-double tm = 0;
 
 Timer timer;
 Ball ball;
@@ -30,11 +30,17 @@ vector <Coin> coins;
 vector <Magnet> magnets;
 vector <Fireline> firelines;
 vector <Firebeam> firebeams;
+vector <Powerup> powerups;
+vector <Water> waters;
 
-// Firebeam firebeam;
+Boomerang boomerang;
+//Initialize new components globally here
 
 float screen_zoom = 1, screen_center_x = 0, screen_center_y = 0;
 float camera_rotation_angle = 0;
+float gravity = 0.001f;
+float ground = 0.1f;
+double tm=0; // for time
 
 Timer t60(1.0 / 60);
 
@@ -62,9 +68,14 @@ void draw() {
     for(int i=0;i<(int)(firelines).size();i++)
         firelines[i].draw(VP);
     for(int i=0;i<(int)(firebeams).size();i++)
-        firebeams[i].draw(VP,tm);
+        firebeams[i].draw(VP);
+    for(int i=0;i<(int)(powerups).size();i++)
+        powerups[i].draw(VP);
+    for(int i=0;i<(int)(waters).size();i++)
+        waters[i].draw(VP);
 
-    // firebeam.draw(VP,tm);
+    boomerang.draw(VP);
+    // Draw new components here
 }
 
 void tick_input(GLFWwindow *window) {
@@ -72,6 +83,7 @@ void tick_input(GLFWwindow *window) {
     int right = glfwGetKey(window, GLFW_KEY_RIGHT);
     int space = glfwGetKey(window, GLFW_KEY_SPACE);
     int down = glfwGetKey(window, GLFW_KEY_DOWN);
+    int up = glfwGetKey(window, GLFW_KEY_UP);
 
     if (left && ball.position.x > 0) {
         dist-=1;
@@ -90,6 +102,12 @@ void tick_input(GLFWwindow *window) {
                 magnets[i].move();
             for(int i=0;i<(int)(firelines).size();i++)
                 firelines[i].move();
+            for(int i=0;i<(int)(powerups).size();i++)
+                powerups[i].move();
+            for(int i=0;i<(int)(waters).size();i++)
+                waters[i].move();
+
+            // Move the frame components here
         }
         else
             ball.move_right();
@@ -99,6 +117,9 @@ void tick_input(GLFWwindow *window) {
     }
     if(down) {
         ball.position.y-=0.01f;
+    }
+    if(up){
+        waters.push_back(Water(ball.position.x+ball.width,ball.position.y+ball.height));
     }
 }
 
@@ -111,17 +132,16 @@ void die(){
 void tick_elements() {
     dist+=1;
     if (timer.processTick())
-    {
-        ball.releaseTime+=0.01;
         tm+=0.01;
-    }
         
     ball.tick();
     wall1.tick();
     wall2.tick();
     wall3.tick();
 
-    // firebeam.tick();
+    boomerang.tick();
+
+    // Add tick of new Components Here
 
     bounding_box_t b;
     b.x = ball.position.x+ball.width/2;
@@ -129,9 +149,85 @@ void tick_elements() {
     b.width = ball.width;
     b.height = ball.height;
 
+    //Waters
+    for(int i=0;i<(int)(waters).size();i++)
+    {
+        waters[i].tick();
+
+        bounding_box_t w;
+        w.x = waters[i].position.x;
+        w.y = waters[i].position.y;
+        w.width = w.height = waters[i].radius*2;
+
+        point_t u,v,p;
+        p.x=waters[i].position.x;
+        p.y=waters[i].position.y;
+        for(int i=0;i<(int)(firelines).size();i++)
+        {
+            u.x=firelines[i].position.x;
+            u.y=firelines[i].position.y;
+            v.x= u.x+ 0.3f*cos( firelines[i].rotation * M_PI / 180.0f);
+            v.y= u.y+ 0.3f*sin( firelines[i].rotation * M_PI / 180.0f);
+
+            bounding_box_t fl;
+            fl.x = (u.x+v.x)/2;
+            fl.y = (u.y+v.y)/2;
+            fl.width = abs(v.x-u.x);
+            fl.height = abs(v.y-u.y);
+
+            if( firelines[i].state && distance(u,v,p) <= waters[i].radius && detect_collision(w,fl))
+                firelines[i].state=0;
+        }
+
+        for(int i=0;i<(int)(firebeams).size();i++)
+        {
+            bounding_box_t fb;
+            fb.x = firebeams[i].position.x+0.45f;
+            fb.y = firebeams[i].position.y;
+            fb.width = 0.9f;
+            fb.height = 0.06f;
+
+            if( firebeams[i].state && detect_collision(w,fb) )
+                firebeams[i].state=0;
+        }
+
+        if((waters[i].position.y) <= ground )
+            waters.erase(waters.begin()+i);
+    }
+    
+    //Powerups
+    if( dist%240 == 0)
+       powerups.push_back(Powerup(1.0,0.9,rand()%2));
+    for(int i=0;i<(int)(powerups).size();i++)
+    {
+        powerups[i].tick();
+
+        bounding_box_t p;
+        p.x = powerups[i].position.x;
+        p.y = powerups[i].position.y;
+        p.width = p.height = powerups[i].radius*2;
+        if(detect_collision(b,p))
+        {
+            powerups.erase(powerups.begin()+i);
+            if(powerups[i].type == 0)
+            {
+                life+=1;
+                cout << "Life : " << life << " Life Increased\n";
+            }
+            else
+            {
+                score+=100;
+                cout << "Score : " << score  << " Score Increased\n";
+            }
+            
+        }
+        if(powerups[i].position.x < 0)
+            powerups.erase(powerups.begin()+i);
+    }
+
     //FireBeam
     if( int(tm*100)%1000 == 0)
-       firebeams.push_back(Firebeam(0.05f,0.9f,1,tm,COLOR_DARKGRAY));
+       firebeams.push_back(Firebeam(0.05f,0.9f,1,COLOR_DARKGRAY));
     for(int i=0;i<(int)(firebeams).size();i++)
     {
         firebeams[i].tick();
@@ -142,7 +238,7 @@ void tick_elements() {
         fb.width = 0.9f;
         fb.height = 0.06f;
 
-        if( detect_collision(b,fb) && tm - firebeams[i].spawnTime > 1.5)
+        if( detect_collision(b,fb) && tm - firebeams[i].spawnTime > 1.5 && firebeams[i].state )
         {
             die();
             cout << "Life : " << life  << " Distance : " << dist << endl;
@@ -165,13 +261,13 @@ void tick_elements() {
         l.x2= l.x1+ 0.3f*cos( firelines[i].rotation * M_PI / 180.0f);
         l.y2= l.y1+ 0.3f*sin( firelines[i].rotation * M_PI / 180.0f);
 
-        bounding_box_t lb;
-        lb.x = (l.x1+l.x2)/2;
-        lb.y = (l.y1+l.y2)/2;
-        lb.width = abs(l.x2-l.x1);
-        lb.height = abs(l.y2-l.y1);
+        bounding_box_t fl;
+        fl.x = (l.x1+l.x2)/2;
+        fl.y = (l.y1+l.y2)/2;
+        fl.width = abs(l.x2-l.x1);
+        fl.height = abs(l.y2-l.y1);
 
-        if( detect_collision(b,lb) && detect_collision(b,l) )
+        if( detect_collision(b,fl) && detect_collision(b,l) && firelines[i].state)
         {
             die();
             cout << "Life : " << life  << " Distance : " << dist << endl;
@@ -236,9 +332,7 @@ void initGL(GLFWwindow *window, int width, int height) {
     wall3 = Wall(1.6,0.1f,COLOR_BLUEGRAY);
     ball = Ball(0,0.1f,COLOR_GREEN);
 
-    // firebeam = Firebeam(0.05f,0.2f,0,COLOR_DARKGRAY);
-    // firebeam = Firebeam(0.05f,0.9f,1,COLOR_DARKGRAY);
-    // firebeam.spawnTime=tm;
+    boomerang = Boomerang(1.0,0.8,COLOR_GREEN);
 
     // Create and compile our GLSL program from the shaders
     programID = LoadShaders("Sample_GL.vert", "Sample_GL.frag");

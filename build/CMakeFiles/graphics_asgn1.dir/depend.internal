@@ -6,6 +6,11 @@ CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/ball.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o
+ /home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.cpp
+ /home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
 CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/coin.cpp
  /home/mayank/Study/Graphics/jetpack_opengl/src/coin.h
@@ -37,6 +42,7 @@ CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/ball.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/coin.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/fireline.h
@@ -44,8 +50,10 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/main.cpp
  /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/platform.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/powerup.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/wall.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/water.h
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/nonedit.cpp
@@ -59,6 +67,11 @@ CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/platform.cpp
  /home/mayank/Study/Graphics/jetpack_opengl/src/platform.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o
+ /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/powerup.cpp
+ /home/mayank/Study/Graphics/jetpack_opengl/src/powerup.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/timer.cpp
  /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
@@ -67,3 +80,8 @@ CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o
  /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
  /home/mayank/Study/Graphics/jetpack_opengl/src/wall.cpp
  /home/mayank/Study/Graphics/jetpack_opengl/src/wall.h
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.o
+ /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+ /home/mayank/Study/Graphics/jetpack_opengl/src/water.cpp
+ /home/mayank/Study/Graphics/jetpack_opengl/src/water.h

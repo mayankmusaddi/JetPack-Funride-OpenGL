@@ -81,9 +81,33 @@ CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o.provides: CMakeFiles/graphics_asgn1
 CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o
 
 
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o: ../src/boomerang.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.cpp
+
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.cpp > CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.i
+
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.cpp -o CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.s
+
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o.requires:
+
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o.requires
+
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o.provides: CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o.requires
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o.provides.build
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o.provides
+
+CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o
+
+
 CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o: ../src/coin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/coin.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/coin.cpp.i: cmake_force
@@ -107,7 +131,7 @@ CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o.provides.build: CMakeFiles/graphics
 
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/color.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/color.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/color.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/color.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/color.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.i: cmake_force
@@ -131,7 +155,7 @@ CMakeFiles/graphics_asgn1.dir/src/color.cpp.o.provides.build: CMakeFiles/graphic
 
 CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o: ../src/firebeam.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o.provides.build: CMakeFiles/grap
 
 CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o: ../src/fireline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/fireline.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o.provides.build: CMakeFiles/grap
 
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/input.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/input.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/input.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/graphics_asgn1.dir/src/input.cpp.o.provides.build: CMakeFiles/graphic
 
 CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/magnet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/magnet.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o.provides.build: CMakeFiles/graphi
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/main.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/main.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o.provides.build: CMakeFiles/graphics
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: ../src/nonedit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/nonedit.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.i: cmake_force
@@ -275,7 +299,7 @@ CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o.provides.build: CMakeFiles/graph
 
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: ../src/other_handlers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/other_handlers.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.i: cmake_force
@@ -299,7 +323,7 @@ CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o: ../src/platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/platform.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/platform.cpp.i: cmake_force
@@ -321,9 +345,33 @@ CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o.provides: CMakeFiles/graphics_a
 CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o
 
 
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o: ../src/powerup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/powerup.cpp
+
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayank/Study/Graphics/jetpack_opengl/src/powerup.cpp > CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.i
+
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayank/Study/Graphics/jetpack_opengl/src/powerup.cpp -o CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.s
+
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o.requires:
+
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o.requires
+
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o.provides: CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o.requires
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o.provides.build
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o.provides
+
+CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o
+
+
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/timer.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.i: cmake_force
@@ -347,7 +395,7 @@ CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o.provides.build: CMakeFiles/graphic
 
 CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o: ../src/wall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/wall.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/wall.cpp.i: cmake_force
@@ -369,9 +417,34 @@ CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o.provides: CMakeFiles/graphics_asgn1
 CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o
 
 
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.o: ../src/water.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/water.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/water.cpp.o -c /home/mayank/Study/Graphics/jetpack_opengl/src/water.cpp
+
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/water.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayank/Study/Graphics/jetpack_opengl/src/water.cpp > CMakeFiles/graphics_asgn1.dir/src/water.cpp.i
+
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/water.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayank/Study/Graphics/jetpack_opengl/src/water.cpp -o CMakeFiles/graphics_asgn1.dir/src/water.cpp.s
+
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.o.requires:
+
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/water.cpp.o.requires
+
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.o.provides: CMakeFiles/graphics_asgn1.dir/src/water.cpp.o.requires
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/water.cpp.o.provides.build
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/water.cpp.o.provides
+
+CMakeFiles/graphics_asgn1.dir/src/water.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/water.cpp.o
+
+
 # Object files for target graphics_asgn1
 graphics_asgn1_OBJECTS = \
 "CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o" \
+"CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/color.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o" \
@@ -382,13 +455,16 @@ graphics_asgn1_OBJECTS = \
 "CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o" \
+"CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o" \
-"CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o"
+"CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o" \
+"CMakeFiles/graphics_asgn1.dir/src/water.cpp.o"
 
 # External object files for target graphics_asgn1
 graphics_asgn1_EXTERNAL_OBJECTS =
 
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o
+graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/color.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o
@@ -399,11 +475,13 @@ graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/main.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o
+graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o
+graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/water.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/build.make
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable graphics_asgn1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mayank/Study/Graphics/jetpack_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable graphics_asgn1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics_asgn1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -412,6 +490,7 @@ CMakeFiles/graphics_asgn1.dir/build: graphics_asgn1
 .PHONY : CMakeFiles/graphics_asgn1.dir/build
 
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o.requires
+CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/boomerang.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/coin.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/color.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o.requires
@@ -422,8 +501,10 @@ CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/main.c
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/platform.cpp.o.requires
+CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o.requires
+CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/water.cpp.o.requires
 
 .PHONY : CMakeFiles/graphics_asgn1.dir/requires
 

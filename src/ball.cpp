@@ -1,15 +1,10 @@
 #include "ball.h"
 #include "main.h"
 
-float gravity = 0.01f;
-float ground = 0.1f;
-
 Ball::Ball(float x, float y, color_t color) {
     this->position = glm::vec3(x, y, 0);
     this->rotation = 0;
     this->speed = 0;
-    this->releaseTime = 0;
-    this->deathTime = 5;
     this->width = 0.1f;
     this->height = 0.1f;
     // Our vertices. Three consecutive floats give a 3D vertex; Three consecutive vertices give a triangle.
@@ -50,15 +45,14 @@ void Ball::move_left(){
 }
 void Ball::move_up(){
     this->position.y+=0.01f;
-    this->speed = 0.05f;
-    this->releaseTime = 0;
+    this->speed = 0;
 }
 
 void Ball::tick() {
     if(this->position.y > ground)
     {
-        this->speed+=gravity*(this->releaseTime);
-        this->position.y-=this->speed*this->releaseTime;
+        this->speed+=gravity;
+        this->position.y-=this->speed;
         if(this->position.y < ground)
             this->position.y = ground;
     }

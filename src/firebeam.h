@@ -7,11 +7,12 @@
 class Firebeam {
 public:
     Firebeam() {}
-    Firebeam(float x, float y, bool direction,double tm, color_t color);
+    Firebeam(float x, float y, bool direction,color_t color);
     glm::vec3 position;
     float rotation;
     float radius;
-    void draw(glm::mat4 VP, double tm);
+    bool state;
+    void draw(glm::mat4 VP);
     void set_position(float x, float y);
     void tick();
     double spawnTime;
