@@ -53,6 +53,26 @@ void keyboard(GLFWwindow *window, int key, int scancode, int action, int mods) {
 /* Executed for character input (like in text boxes) */
 void keyboardChar(GLFWwindow *window, unsigned int key) {
     switch (key) {
+    case 'w':
+        if((screen_center_y+1)/screen_zoom < 1)
+            screen_center_y+=0.01;
+        reset_screen();
+        break;
+    case 's':
+        if((screen_center_y)/screen_zoom >0)
+        screen_center_y-=0.01;
+        reset_screen();
+        break;
+    case 'a':
+        if((screen_center_x)/screen_zoom >0)
+        screen_center_x-=0.01;
+        reset_screen();
+        break;
+    case 'd':
+        if((screen_center_x+1)/screen_zoom <1)
+        screen_center_x+=0.01;
+        reset_screen();
+        break;
     case 'Q':
     case 'q':
         quit(window);
@@ -85,4 +105,16 @@ void mouseButton(GLFWwindow *window, int button, int action, int mods) {
 
 void scroll_callback(GLFWwindow *window, double xoffset, double yoffset) {
     // Do something
+    if(yoffset==1)
+    {
+        screen_zoom +=0.1;
+        reset_screen();
+    }
+    else if(yoffset==-1 && screen_zoom>1)
+    {
+        screen_zoom -=0.1;
+        if(screen_zoom<=1)
+            screen_zoom=1;
+        reset_screen();
+    }
 }

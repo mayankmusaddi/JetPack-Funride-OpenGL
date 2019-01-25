@@ -9,6 +9,11 @@
 #include "powerup.h"
 #include "water.h"
 #include "boomerang.h"
+#include "ring.h"
+#include "health.h"
+#include "viserion.h"
+#include "ice.h"
+// #include "digit.h"
 // Include any new component here
 #include <cstdlib> // for rand() function
 
@@ -32,8 +37,12 @@ vector <Fireline> firelines;
 vector <Firebeam> firebeams;
 vector <Powerup> powerups;
 vector <Water> waters;
+vector <Boomerang> boomerangs;
+vector <Ring> rings;
+vector <Health> lives;
+vector <Ice> ices;
+vector <Viserion> viserions;
 
-Boomerang boomerang;
 //Initialize new components globally here
 
 float screen_zoom = 1, screen_center_x = 0, screen_center_y = 0;
@@ -59,22 +68,35 @@ void draw() {
     wall1.draw(VP);
     wall2.draw(VP);
     wall3.draw(VP);
-    ball.draw(VP);
 
-    for(int i=0;i<(int)(coins).size();i++)
-        coins[i].draw(VP);
-    for(int i=0;i<(int)(magnets).size();i++)
-        magnets[i].draw(VP);
-    for(int i=0;i<(int)(firelines).size();i++)
-        firelines[i].draw(VP);
-    for(int i=0;i<(int)(firebeams).size();i++)
-        firebeams[i].draw(VP);
-    for(int i=0;i<(int)(powerups).size();i++)
-        powerups[i].draw(VP);
-    for(int i=0;i<(int)(waters).size();i++)
-        waters[i].draw(VP);
+    if(life > 0)
+    {
+        for(int i=0;i<(int)(coins).size();i++)
+            coins[i].draw(VP);
+        for(int i=0;i<(int)(magnets).size();i++)
+            magnets[i].draw(VP);
+        for(int i=0;i<(int)(firelines).size();i++)
+            firelines[i].draw(VP);
+        for(int i=0;i<(int)(firebeams).size();i++)
+            firebeams[i].draw(VP);
+        for(int i=0;i<(int)(powerups).size();i++)
+            powerups[i].draw(VP);
+        for(int i=0;i<(int)(waters).size();i++)
+            waters[i].draw(VP);
+        for(int i=0;i<(int)(boomerangs).size();i++)
+            boomerangs[i].draw(VP);
+        for(int i=0;i<(int)(rings).size();i++)
+            rings[i].draw(VP);
+        for(int i=0;i<(int)(lives).size();i++)
+            lives[i].draw(VP);
+        for(int i=0;i<(int)(ices).size();i++)
+            ices[i].draw(VP);
+        for(int i=0;i<(int)(viserions).size();i++)
+            viserions[i].draw(VP);
 
-    boomerang.draw(VP);
+        ball.draw(VP);
+    }
+
     // Draw new components here
 }
 
@@ -106,6 +128,12 @@ void tick_input(GLFWwindow *window) {
                 powerups[i].move();
             for(int i=0;i<(int)(waters).size();i++)
                 waters[i].move();
+            for(int i=0;i<(int)(rings).size();i++)
+                rings[i].move();
+            for(int i=0;i<(int)(ices).size();i++)
+                ices[i].move();
+            for(int i=0;i<(int)(viserions).size();i++)
+                viserions[i].move();
 
             // Move the frame components here
         }
@@ -124,9 +152,13 @@ void tick_input(GLFWwindow *window) {
 }
 
 void die(){
-    ball.position.x=0;
-    ball.position.y=-0.1f;
-    life-=1;
+    if(!ball.invincible)
+    {
+        ball.position.x=0;
+        ball.position.y=-0.1f;
+        life-=1;
+        lives.pop_back();
+    }
 }
 
 void tick_elements() {
@@ -139,8 +171,6 @@ void tick_elements() {
     wall2.tick();
     wall3.tick();
 
-    boomerang.tick();
-
     // Add tick of new Components Here
 
     bounding_box_t b;
@@ -148,6 +178,69 @@ void tick_elements() {
     b.y = ball.position.y+ball.height/2;
     b.width = ball.width;
     b.height = ball.height;
+
+    //Ice
+    for(int i=0;i<(int)(ices).size();i++)
+    {
+        ices[i].tick();
+
+        bounding_box_t c;
+        c.x = ices[i].position.x;
+        c.y = ices[i].position.y;
+        c.width = ices[i].radius*2;
+        c.height = ices[i].radius*2;
+
+        if(detect_collision(b,c))
+        {
+            die();
+            cout << "Life : " << life << " KHALLLLLLLLLLLAAAAAAAS\n";
+        }
+    }
+
+    //Viserion
+    if( dist%650 == 0)
+       viserions.push_back(Viserion(1.1,0.5));
+    for(int i=0;i<(int)(viserions).size();i++)
+    {
+        viserions[i].tick();
+        if((tm - viserions[i].spawntime) > 0.3)
+        {
+            viserions[i].spawntime = tm;
+            ices.push_back(Ice(viserions[i].position.x,viserions[i].position.y));
+        }
+        if(ball.position.y > viserions[i].position.y)
+            viserions[i].position.y+=0.003f;
+        if(ball.position.y < viserions[i].position.y)
+            viserions[i].position.y-=0.003f;
+        if(viserions[i].position.x < -0.1)
+            viserions.erase(viserions.begin()+i);
+    }
+
+    //Rings
+    if( dist%470 == 0)
+       rings.push_back(Ring(1.5,0.5,COLOR_YELLOW));
+    for(int i=0;i<(int)(rings).size();i++)
+    {
+        rings[i].tick();
+
+        if(ball.gstate==1 && rings[i].position.x-rings[i].radius > ball.position.x && rings[i].position.x-rings[i].radius <= ball.position.x+ball.width  && rings[i].position.y>=ball.position.y && rings[i].position.y<ball.position.y+ball.height)
+        {
+            ball.gstate=0;
+            ball.invincible=1;
+        }
+        if(!ball.gstate)
+        {
+            if(ball.position.x+ball.width < rings[i].position.x - rings[i].radius || ball.position.x > rings[i].position.x+rings[i].radius)
+            {
+                ball.gstate=1;
+                ball.invincible=0;
+            }
+            ball.position.y = -sqrt(abs(((rings[i].radius+0.07)*(rings[i].radius+0/07))-((ball.position.x+ball.width/2-rings[i].position.x)*(ball.position.x+ball.width/2-rings[i].position.x)))) + rings[i].position.y - ball.height/4;
+        }
+
+        if(rings[i].position.x < -0.5)
+            rings.erase(rings.begin()+i);
+    }
 
     //Waters
     for(int i=0;i<(int)(waters).size();i++)
@@ -196,6 +289,8 @@ void tick_elements() {
     }
     
     //Powerups
+    if(tm-ball.shieldtime > 3)
+        ball.invincible =0;
     if( dist%240 == 0)
        powerups.push_back(Powerup(1.0,0.9,rand()%2));
     for(int i=0;i<(int)(powerups).size();i++)
@@ -209,20 +304,51 @@ void tick_elements() {
         if(detect_collision(b,p))
         {
             powerups.erase(powerups.begin()+i);
-            if(powerups[i].type == 0)
+            if(powerups[i].type == 1)
             {
                 life+=1;
+                lives.push_back(Health(0.05*(life),0.95));
                 cout << "Life : " << life << " Life Increased\n";
             }
             else
             {
                 score+=100;
+                ball.shieldtime = tm;
+                ball.invincible = 1;
                 cout << "Score : " << score  << " Score Increased\n";
             }
             
         }
         if(powerups[i].position.x < 0)
             powerups.erase(powerups.begin()+i);
+    }
+
+    //Boomerang
+    if( int(tm*100)%800 == 0)
+       boomerangs.push_back(Boomerang(1.0,0.8,COLOR_OCHRE));
+    for(int i=0;i<(int)(boomerangs).size();i++)
+    {
+        boomerangs[i].tick();
+
+        line_segment_t l;
+        l.x1=boomerangs[i].position.x-boomerangs[i].radius/2 +  boomerangs[i].radius*3* sin( boomerangs[i].rotation * M_PI / 180.0f);
+        l.y1=boomerangs[i].position.y +  boomerangs[i].radius*3* cos( boomerangs[i].rotation * M_PI / 180.0f);
+        l.x2=boomerangs[i].position.x-boomerangs[i].radius/2 -  boomerangs[i].radius*3* sin( boomerangs[i].rotation * M_PI / 180.0f);
+        l.y2=boomerangs[i].position.y -  boomerangs[i].radius*3* cos( boomerangs[i].rotation * M_PI / 180.0f);
+
+        bounding_box_t r;
+        r.x = (l.x1+l.x2)/2;
+        r.y = (l.y1+l.y2)/2;
+        r.width = abs(l.x2-l.x1);
+        r.height = abs(l.y2-l.y1);
+        if( detect_collision(b,r) && detect_collision(b,l))
+        {
+            die();
+            cout << "Life : " << life  << " DEADDDDDDDDDDDDDDDDDd" << endl;
+        }
+
+        if( boomerangs[i].position.x > 1)
+            boomerangs.erase(boomerangs.begin()+i);
     }
 
     //FireBeam
@@ -299,7 +425,7 @@ void tick_elements() {
 
     //Coins
     if( dist%50 == 0)
-       coins.push_back(Coin(1.0,(rand()%8+2)/10.0,COLOR_YELLOW));
+       coins.push_back(Coin(1.0,(rand()%8+2)/10.0,rand()%2));
     for(int i=0;i<(int)(coins).size();i++)
     {
         coins[i].tick();
@@ -311,7 +437,10 @@ void tick_elements() {
         if(detect_collision(b,c))
         {
             coins.erase(coins.begin()+i);
-            score+=1;
+            if(coins[i].type==0)
+                score+=1;
+            else
+                score+=5;
             cout << "Score : " << score  << " Distance : " << dist << endl;
         }
         if(coins[i].position.x < 0)
@@ -331,8 +460,8 @@ void initGL(GLFWwindow *window, int width, int height) {
     wall2 = Wall(0.8,0.1f,COLOR_BLUEGRAY);
     wall3 = Wall(1.6,0.1f,COLOR_BLUEGRAY);
     ball = Ball(0,0.1f,COLOR_GREEN);
-
-    boomerang = Boomerang(1.0,0.8,COLOR_GREEN);
+    for(int i=0;i<life;i++)
+        lives.push_back(Health(0.05*(i+1),0.95));
 
     // Create and compile our GLSL program from the shaders
     programID = LoadShaders("Sample_GL.vert", "Sample_GL.frag");
@@ -370,6 +499,7 @@ int main(int argc, char **argv) {
             draw();
             // Swap Frame Buffer in double buffering
             glfwSwapBuffers(window);
+            glfwSetWindowTitle(window,"ABC");
 
             tick_elements();
             tick_input(window);

@@ -1,22 +1,16 @@
-#include "powerup.h"
+#include "ice.h"
 #include "main.h"
 
 #include <iostream>
 using namespace std;
 
-Powerup::Powerup(float x, float y, bool type) {
+Ice::Ice(float x, float y) {
     this->position = glm::vec3(x, y, 0);
     this->rotation = 0;
-    this->radius = 0.04f;
-    this->speed = 0;
-    this->type=type;
+    this->radius = 0.02f;
+    this->speed = -0.03f;
     
-    color_t color;
-
-    if(type==0)
-        color = COLOR_GREEN;
-    else
-        color = COLOR_RED;
+    color_t color = COLOR_BLUE;
 
     int k=0;
     int n=4;
@@ -28,17 +22,17 @@ Powerup::Powerup(float x, float y, bool type) {
         vertex_buffer_data[k++]= 0.0f;
 
         vertex_buffer_data[k++]= (this->radius*cos(2*M_PI/n*i));
-        vertex_buffer_data[k++]= 1.2*(this->radius*sin(2*M_PI/n*i));
+        vertex_buffer_data[k++]= (this->radius*sin(2*M_PI/n*i));
         vertex_buffer_data[k++]= 0.0f;
 
         vertex_buffer_data[k++]= (this->radius*cos(2*M_PI/n*(i+1)));
-        vertex_buffer_data[k++]= 1.2*(this->radius*sin(2*M_PI/n*(i+1)));
+        vertex_buffer_data[k++]= (this->radius*sin(2*M_PI/n*(i+1)));
         vertex_buffer_data[k++]= 0.0f;
     }
     this->object = create3DObject(GL_TRIANGLES, n*3, vertex_buffer_data, color, GL_FILL);
 }
 
-void Powerup::draw(glm::mat4 VP) {
+void Ice::draw(glm::mat4 VP) {
     Matrices.model = glm::mat4(1.0f);
     glm::mat4 translate = glm::translate (this->position);    // glTranslatef
     glm::mat4 rotate    = glm::rotate((float) (this->rotation * M_PI / 180.0f), glm::vec3(1, 0, 0));
@@ -48,24 +42,14 @@ void Powerup::draw(glm::mat4 VP) {
     draw3DObject(this->object);
 }
 
-void Powerup::set_position(float x, float y) {
+void Ice::set_position(float x, float y) {
     this->position = glm::vec3(x, y, 0);
 }
 
-void Powerup::move() {
+void Ice::move() {
     this->position.x -= 0.01f;
 }
 
-void Powerup::tick() {
-    this->position.x -= 0.01f;
-    if(this->position.y >= ground+this->radius)
-    {
-        this->speed+=gravity;
-        this->position.y-=this->speed;
-        if(this->position.y < ground+this->radius)
-        {
-            this->position.y = ground+this->radius;
-            this->speed = -(this->speed);
-        }
-    }
+void Ice::tick() {
+    this->position.x -= 0.015f;
 }

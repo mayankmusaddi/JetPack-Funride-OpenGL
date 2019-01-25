@@ -1,30 +1,23 @@
 #include "main.h"
 
-#ifndef BALL_H
-#define BALL_H
+#ifndef VISERION_H
+#define VISERION_H
 
 
-class Ball {
+class Viserion {
 public:
-    Ball() {}
-    Ball(float x, float y, color_t color);
+    Viserion() {}
+    Viserion(float x, float y);
     glm::vec3 position;
     float rotation;
     float width;
     float height;
+    double spawntime;
     void draw(glm::mat4 VP);
     void set_position(float x, float y);
-    void move_right();
-    void move_left();
-    void move_up();
+    void move();
     void tick();
-    double speedy;
-    double speedx;
-    double accy;
-    double accx;
-    double shieldtime;
-    bool gstate;
-    bool invincible;
+    void hit();
 private:
     VAO *object1;
     VAO *object2;
@@ -35,4 +28,4 @@ private:
     VAO *object7;
 };
 
-#endif // BALL_H
+#endif // VISERION_H

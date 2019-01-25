@@ -58,8 +58,18 @@ Boomerang::Boomerang(float x, float y, color_t color) {
         vertex_buffer_data1[k++]= 0.0f;
     }
 
+    static const GLfloat vertex_buffer_data2[] = {
+        this->radius,-0.06f,0.0f, // triangle 1 : begin
+        this->radius,0.06f, 0.0f,
+        -2*this->radius,-0.06f, 0.0f, // triangle 1 : end
+        -2*this->radius,-0.06f,0.0f, // triangle 2 : begin
+        -2*this->radius,0.06f,0.0f,
+        this->radius,0.06f,0.0f, // triangle 2 : end
+    };
+
     this->object = create3DObject(GL_TRIANGLES, n*6, vertex_buffer_data, color, GL_FILL);
     this->object1 = create3DObject(GL_TRIANGLES, n*3, vertex_buffer_data1, COLOR_RED, GL_FILL);
+    this->object2 = create3DObject(GL_TRIANGLES, 2*3, vertex_buffer_data2, COLOR_YELLOW, GL_FILL);
 }
 
 void Boomerang::draw(glm::mat4 VP) {
@@ -69,8 +79,9 @@ void Boomerang::draw(glm::mat4 VP) {
     Matrices.model *= (translate * rotate);
     glm::mat4 MVP = VP * Matrices.model;
     glUniformMatrix4fv(Matrices.MatrixID, 1, GL_FALSE, &MVP[0][0]);
+    // draw3DObject(this->object2);
     draw3DObject(this->object);
-    draw3DObject(this->object1);
+    // draw3DObject(this->object1);
 }
 
 void Boomerang::set_position(float x, float y) {

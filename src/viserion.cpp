@@ -1,20 +1,14 @@
-#include "ball.h"
+#include "viserion.h"
 #include "main.h"
+#include "water.h"
 
-bool up=0;
-Ball::Ball(float x, float y, color_t color) {
+Viserion::Viserion(float x, float y) {
     this->position = glm::vec3(x, y, 0);
     this->rotation = 0;
-    this->speedy = 0;
-    this->speedx = 0;
     this->width = 0.1f;
     this->height = 0.1f;
-    this->gstate=1;
-    this->invincible=0;
-    this->shieldtime = 0;
+    this->spawntime = tm;
 
-    this->accx = 0;
-    this->accy = 0;
     // Our vertices. Three consecutive floats give a 3D vertex; Three consecutive vertices give a triangle.
     // A cube has 6 faces with 2 triangles each, so this makes 6*2=12 triangles, and 12*3 vertices
     static const GLfloat vertex_buffer_data1[] = {
@@ -90,7 +84,7 @@ Ball::Ball(float x, float y, color_t color) {
     this->object7 = create3DObject(GL_TRIANGLES, 2*3*n, vertex_buffer_data7, COLOR_DARKGRAY, GL_FILL);
 }
 
-void Ball::draw(glm::mat4 VP) {
+void Viserion::draw(glm::mat4 VP) {
     Matrices.model = glm::mat4(1.0f);
     glm::mat4 translate = glm::translate (this->position);    // glTranslatef
     glm::mat4 rotate    = glm::rotate((float) (this->rotation * M_PI / 180.0f), glm::vec3(1, 0, 0));
@@ -104,38 +98,23 @@ void Ball::draw(glm::mat4 VP) {
     draw3DObject(this->object3);
     draw3DObject(this->object4);
     draw3DObject(this->object5);
-    if(up)
     draw3DObject(this->object6);
-    if(this->invincible && this->gstate)
-        draw3DObject(this->object7);
 }
 
-void Ball::set_position(float x, float y) {
+void Viserion::set_position(float x, float y) {
     this->position = glm::vec3(x, y, 0);
 }
 
-void Ball::move_right(){
-    this->position.x+=0.01f;
-}
-void Ball::move_left(){
-    this->position.x-=0.01f;
-}
-void Ball::move_up(){
-    this->position.y+=0.01f;
-    up=1;
-    this->speedy = 0;
+void Viserion::move() {
+    this->position.x -= 0.01f;
 }
 
-void Ball::tick() {
-    up=0;
-    if(this->gstate && this->position.y > ground)
-    {
-        this->speedy+=gravity;
-        this->position.y-=this->speedy;
-        if(this->position.y < ground)
-                this->position.y = ground;
-    }
-    this->speedy+=this->accy;
-    this->speedx+=this->accx;
-    this->position.x-=this->speedx;
+void Viserion::hit() {
+    Water water = Water(0,0);
+}
+
+void Viserion::tick() {
+    this->position.x -= 0.003f;
+    if(this->position.y < ground)
+        this->position.y = ground;
 }

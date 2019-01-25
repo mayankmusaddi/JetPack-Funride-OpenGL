@@ -1,26 +1,23 @@
 #include "main.h"
 
-#ifndef BOOMERANG_H
-#define BOOMERANG_H
+#ifndef HEALTH_H
+#define HEALTH_H
 
 
-class Boomerang {
+class Health {
 public:
-    Boomerang() {}
-    Boomerang(float x, float y, color_t color);
+    Health() {}
+    Health(float x, float y);
     glm::vec3 position;
     float rotation;
     float radius;
-    bool state;
-    bool direction;
     void draw(glm::mat4 VP);
     void set_position(float x, float y);
     void tick();
-    double spawnTime;
 private:
-    VAO *object;
     VAO *object1;
     VAO *object2;
+    VAO *object3;
 };
 
-#endif // BOOMERANG_H
+#endif // HEALTH_H

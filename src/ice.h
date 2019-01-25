@@ -1,13 +1,13 @@
 #include "main.h"
 
-#ifndef COIN_H
-#define COIN_H
+#ifndef ICE_H
+#define ICE_H
 
 
-class Coin {
+class Ice {
 public:
-    Coin() {}
-    Coin(float x, float y, bool type);
+    Ice() {}
+    Ice(float x, float y);
     glm::vec3 position;
     float rotation;
     float radius;
@@ -15,9 +15,9 @@ public:
     void set_position(float x, float y);
     void tick();
     void move();
-    bool type;
+    double speed;
 private:
     VAO *object;
 };
 
-#endif // COIN_H
+#endif // ICE_H

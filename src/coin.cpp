@@ -1,10 +1,17 @@
 #include "coin.h"
 #include "main.h"
 
-Coin::Coin(float x, float y, color_t color) {
+Coin::Coin(float x, float y,bool type) {
     this->position = glm::vec3(x, y, 0);
     this->rotation = 0;
     this->radius = 0.03f;
+    this->type = type;
+    color_t color;
+    
+    if(this->type==0)
+        color = COLOR_YELLOW;
+    else
+        color = COLOR_VIOLET;
 
     int k=0;
     int n=20;

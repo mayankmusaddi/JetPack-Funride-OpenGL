@@ -42,6 +42,16 @@ main.h
 main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 
+/home/mayank/Study/Graphics/jetpack_opengl/src/digit.cpp
+digit.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/digit.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/digit.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
 /home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.cpp
 firebeam.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.h
@@ -59,6 +69,28 @@ main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 
 /home/mayank/Study/Graphics/jetpack_opengl/src/fireline.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/health.cpp
+health.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/health.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/health.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/ice.cpp
+ice.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/ice.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+iostream
+-
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/ice.h
 main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 
@@ -119,6 +151,14 @@ water.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/water.h
 boomerang.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.h
+ring.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/ring.h
+health.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/health.h
+viserion.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/viserion.h
+ice.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/ice.h
 cstdlib
 -
 
@@ -210,6 +250,16 @@ iostream
 main.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 
+/home/mayank/Study/Graphics/jetpack_opengl/src/ring.cpp
+ring.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/ring.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/ring.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+
 /home/mayank/Study/Graphics/jetpack_opengl/src/timer.cpp
 timer.h
 /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
@@ -217,6 +267,18 @@ GLFW/glfw3.h
 -
 
 /home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/viserion.cpp
+viserion.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/viserion.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+water.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/water.h
+
+/home/mayank/Study/Graphics/jetpack_opengl/src/viserion.h
+main.h
+/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
 
 /home/mayank/Study/Graphics/jetpack_opengl/src/wall.cpp
 wall.h

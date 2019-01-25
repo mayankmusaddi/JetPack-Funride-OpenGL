@@ -231,6 +231,33 @@ src/color.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/color.cpp.s
 .PHONY : src/color.cpp.s
 
+src/digit.o: src/digit.cpp.o
+
+.PHONY : src/digit.o
+
+# target to build an object file
+src/digit.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/digit.cpp.o
+.PHONY : src/digit.cpp.o
+
+src/digit.i: src/digit.cpp.i
+
+.PHONY : src/digit.i
+
+# target to preprocess a source file
+src/digit.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/digit.cpp.i
+.PHONY : src/digit.cpp.i
+
+src/digit.s: src/digit.cpp.s
+
+.PHONY : src/digit.s
+
+# target to generate assembly for a file
+src/digit.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/digit.cpp.s
+.PHONY : src/digit.cpp.s
+
 src/firebeam.o: src/firebeam.cpp.o
 
 .PHONY : src/firebeam.o
@@ -284,6 +311,60 @@ src/fireline.s: src/fireline.cpp.s
 src/fireline.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.s
 .PHONY : src/fireline.cpp.s
+
+src/health.o: src/health.cpp.o
+
+.PHONY : src/health.o
+
+# target to build an object file
+src/health.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/health.cpp.o
+.PHONY : src/health.cpp.o
+
+src/health.i: src/health.cpp.i
+
+.PHONY : src/health.i
+
+# target to preprocess a source file
+src/health.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/health.cpp.i
+.PHONY : src/health.cpp.i
+
+src/health.s: src/health.cpp.s
+
+.PHONY : src/health.s
+
+# target to generate assembly for a file
+src/health.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/health.cpp.s
+.PHONY : src/health.cpp.s
+
+src/ice.o: src/ice.cpp.o
+
+.PHONY : src/ice.o
+
+# target to build an object file
+src/ice.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/ice.cpp.o
+.PHONY : src/ice.cpp.o
+
+src/ice.i: src/ice.cpp.i
+
+.PHONY : src/ice.i
+
+# target to preprocess a source file
+src/ice.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/ice.cpp.i
+.PHONY : src/ice.cpp.i
+
+src/ice.s: src/ice.cpp.s
+
+.PHONY : src/ice.s
+
+# target to generate assembly for a file
+src/ice.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/ice.cpp.s
+.PHONY : src/ice.cpp.s
 
 src/input.o: src/input.cpp.o
 
@@ -474,6 +555,33 @@ src/powerup.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.s
 .PHONY : src/powerup.cpp.s
 
+src/ring.o: src/ring.cpp.o
+
+.PHONY : src/ring.o
+
+# target to build an object file
+src/ring.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o
+.PHONY : src/ring.cpp.o
+
+src/ring.i: src/ring.cpp.i
+
+.PHONY : src/ring.i
+
+# target to preprocess a source file
+src/ring.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/ring.cpp.i
+.PHONY : src/ring.cpp.i
+
+src/ring.s: src/ring.cpp.s
+
+.PHONY : src/ring.s
+
+# target to generate assembly for a file
+src/ring.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/ring.cpp.s
+.PHONY : src/ring.cpp.s
+
 src/timer.o: src/timer.cpp.o
 
 .PHONY : src/timer.o
@@ -500,6 +608,33 @@ src/timer.s: src/timer.cpp.s
 src/timer.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/timer.cpp.s
 .PHONY : src/timer.cpp.s
+
+src/viserion.o: src/viserion.cpp.o
+
+.PHONY : src/viserion.o
+
+# target to build an object file
+src/viserion.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/viserion.cpp.o
+.PHONY : src/viserion.cpp.o
+
+src/viserion.i: src/viserion.cpp.i
+
+.PHONY : src/viserion.i
+
+# target to preprocess a source file
+src/viserion.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/viserion.cpp.i
+.PHONY : src/viserion.cpp.i
+
+src/viserion.s: src/viserion.cpp.s
+
+.PHONY : src/viserion.s
+
+# target to generate assembly for a file
+src/viserion.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/viserion.cpp.s
+.PHONY : src/viserion.cpp.s
 
 src/wall.o: src/wall.cpp.o
 
@@ -576,12 +711,21 @@ help:
 	@echo "... src/color.o"
 	@echo "... src/color.i"
 	@echo "... src/color.s"
+	@echo "... src/digit.o"
+	@echo "... src/digit.i"
+	@echo "... src/digit.s"
 	@echo "... src/firebeam.o"
 	@echo "... src/firebeam.i"
 	@echo "... src/firebeam.s"
 	@echo "... src/fireline.o"
 	@echo "... src/fireline.i"
 	@echo "... src/fireline.s"
+	@echo "... src/health.o"
+	@echo "... src/health.i"
+	@echo "... src/health.s"
+	@echo "... src/ice.o"
+	@echo "... src/ice.i"
+	@echo "... src/ice.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"
@@ -603,9 +747,15 @@ help:
 	@echo "... src/powerup.o"
 	@echo "... src/powerup.i"
 	@echo "... src/powerup.s"
+	@echo "... src/ring.o"
+	@echo "... src/ring.i"
+	@echo "... src/ring.s"
 	@echo "... src/timer.o"
 	@echo "... src/timer.i"
 	@echo "... src/timer.s"
+	@echo "... src/viserion.o"
+	@echo "... src/viserion.i"
+	@echo "... src/viserion.s"
 	@echo "... src/wall.o"
 	@echo "... src/wall.i"
 	@echo "... src/wall.s"

@@ -20,6 +20,11 @@ CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/color.cpp
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/timer.h
 
+CMakeFiles/graphics_asgn1.dir/src/digit.cpp.o: ../src/digit.cpp
+CMakeFiles/graphics_asgn1.dir/src/digit.cpp.o: ../src/digit.h
+CMakeFiles/graphics_asgn1.dir/src/digit.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/digit.cpp.o: ../src/timer.h
+
 CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o: ../src/firebeam.cpp
 CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o: ../src/firebeam.h
 CMakeFiles/graphics_asgn1.dir/src/firebeam.cpp.o: ../src/main.h
@@ -29,6 +34,16 @@ CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o: ../src/fireline.cpp
 CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o: ../src/fireline.h
 CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/fireline.cpp.o: ../src/timer.h
+
+CMakeFiles/graphics_asgn1.dir/src/health.cpp.o: ../src/health.cpp
+CMakeFiles/graphics_asgn1.dir/src/health.cpp.o: ../src/health.h
+CMakeFiles/graphics_asgn1.dir/src/health.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/health.cpp.o: ../src/timer.h
+
+CMakeFiles/graphics_asgn1.dir/src/ice.cpp.o: ../src/ice.cpp
+CMakeFiles/graphics_asgn1.dir/src/ice.cpp.o: ../src/ice.h
+CMakeFiles/graphics_asgn1.dir/src/ice.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/ice.cpp.o: ../src/timer.h
 
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/input.cpp
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/main.h
@@ -45,12 +60,16 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/boomerang.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/coin.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/firebeam.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/fireline.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/health.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/ice.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/magnet.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/platform.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/powerup.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/ring.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/timer.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/viserion.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/wall.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/water.h
 
@@ -72,8 +91,19 @@ CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o: ../src/powerup.cpp
 CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o: ../src/powerup.h
 CMakeFiles/graphics_asgn1.dir/src/powerup.cpp.o: ../src/timer.h
 
+CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: ../src/ring.cpp
+CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: ../src/ring.h
+CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: ../src/timer.h
+
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.cpp
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.h
+
+CMakeFiles/graphics_asgn1.dir/src/viserion.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/viserion.cpp.o: ../src/timer.h
+CMakeFiles/graphics_asgn1.dir/src/viserion.cpp.o: ../src/viserion.cpp
+CMakeFiles/graphics_asgn1.dir/src/viserion.cpp.o: ../src/viserion.h
+CMakeFiles/graphics_asgn1.dir/src/viserion.cpp.o: ../src/water.h
 
 CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/wall.cpp.o: ../src/timer.h
