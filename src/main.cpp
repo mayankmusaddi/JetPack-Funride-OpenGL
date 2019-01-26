@@ -431,7 +431,6 @@ void tick_elements() {
                 score+=1;
             else
                 score+=5;
-            cout << "Score : " << score  << " Distance : " << dist << endl;
         }
         if(coins[i].position.x < 0)
             coins.erase(coins.begin()+i);

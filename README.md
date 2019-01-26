@@ -56,6 +56,12 @@ $ cd build
 $ make all
 ```
 
+# Controls
+
+For controls follow the pdf [help.pdf] present in the directory. To open run the command :
+```
+$ xdg-open help.pdf
+```
 License
 -------
 The MIT License https://mayankmusaddi.mit-license.org/
