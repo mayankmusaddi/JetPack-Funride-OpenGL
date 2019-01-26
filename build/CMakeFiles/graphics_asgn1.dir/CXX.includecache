@@ -6,95 +6,95 @@
 
 #IncludeRegexTransform: 
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/ball.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ball.cpp
 ball.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/ball.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ball.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/ball.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ball.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/boomerang.cpp
 boomerang.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/boomerang.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 iostream
 -
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/boomerang.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/coin.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/coin.cpp
 coin.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/coin.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/coin.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/coin.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/coin.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/color.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/color.cpp
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/digit.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/digit.cpp
 digit.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/digit.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/digit.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/digit.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/digit.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/firebeam.cpp
 firebeam.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/firebeam.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/firebeam.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/fireline.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/fireline.cpp
 fireline.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/fireline.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/fireline.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/fireline.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/fireline.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/health.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/health.cpp
 health.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/health.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/health.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/health.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/health.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/ice.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ice.cpp
 ice.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/ice.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ice.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 iostream
 -
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/ice.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ice.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/input.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/input.cpp
 iostream
 -
 cmath
@@ -114,53 +114,53 @@ glm/gtx/transform.hpp
 glm/gtc/matrix_transform.hpp
 -
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/magnet.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/magnet.cpp
 magnet.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/magnet.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/magnet.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 ball.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/ball.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ball.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/magnet.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/magnet.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.cpp
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 ball.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/ball.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ball.h
 platform.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/platform.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/platform.h
 wall.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/wall.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/wall.h
 coin.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/coin.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/coin.h
 magnet.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/magnet.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/magnet.h
 fireline.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/fireline.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/fireline.h
 firebeam.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/firebeam.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/firebeam.h
 powerup.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/powerup.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/powerup.h
 water.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/water.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/water.h
 boomerang.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/boomerang.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/boomerang.h
 ring.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/ring.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ring.h
 health.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/health.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/health.h
 viserion.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/viserion.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/viserion.h
 ice.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/ice.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ice.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 iostream
 -
 cmath
@@ -180,9 +180,9 @@ glm/gtx/transform.hpp
 glm/gtc/matrix_transform.hpp
 -
 timer.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/timer.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/nonedit.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/nonedit.cpp
 iostream
 -
 cmath
@@ -202,9 +202,9 @@ glm/gtx/transform.hpp
 glm/gtc/matrix_transform.hpp
 -
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/other_handlers.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/other_handlers.cpp
 iostream
 -
 cmath
@@ -224,79 +224,79 @@ glm/gtx/transform.hpp
 glm/gtc/matrix_transform.hpp
 -
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/platform.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/platform.cpp
 platform.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/platform.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/platform.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/platform.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/platform.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/powerup.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/powerup.cpp
 powerup.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/powerup.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/powerup.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 iostream
 -
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/powerup.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/powerup.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/ring.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ring.cpp
 ring.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/ring.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ring.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/ring.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/ring.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/timer.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/timer.cpp
 timer.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/timer.h
 GLFW/glfw3.h
 -
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/timer.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/timer.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/viserion.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/viserion.cpp
 viserion.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/viserion.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/viserion.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 water.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/water.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/water.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/viserion.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/viserion.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/wall.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/wall.cpp
 wall.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/wall.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/wall.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/wall.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/wall.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/water.cpp
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/water.cpp
 water.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/water.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/water.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 iostream
 -
 
-/home/mayank/Study/Graphics/jetpack_opengl/src/water.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/water.h
 main.h
-/home/mayank/Study/Graphics/jetpack_opengl/src/main.h
+/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/src/main.h
 

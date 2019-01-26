@@ -1,4 +1,4 @@
-# Install script for directory: /home/mayank/Study/Graphics/jetpack_opengl
+# Install script for directory: /home/mayank/Study/Graphics/Assignment 1/jetpack_opengl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mayank/Study/Graphics/jetpack_opengl/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mayank/Study/Graphics/Assignment 1/jetpack_opengl/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

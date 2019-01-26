@@ -26,6 +26,7 @@ long long score=0;
 long long life=5;
 long long fscore=0;
 long long fdist=0;
+bool shot = false;
 
 Timer timer;
 Ball ball;
@@ -143,10 +144,14 @@ void tick_input(GLFWwindow *window) {
     if (space && ball.position.y < 0.9f) {
         ball.move_up();
     }
-    if(up && score > 0){
+    if(up && score > 0 && !shot){
+        system("aplay -c 1 -t wav -q ./sound/splash-bubble.wav&");
         waters.push_back(Water(ball.position.x+ball.width,ball.position.y+ball.height));
         score-=1;
+        shot = true;
     }
+    if(up== GLFW_RELEASE && shot==true)
+        shot=false;
 }
 
 void die(){
@@ -155,6 +160,7 @@ void die(){
         ball.position.x=0;
         ball.position.y=-0.1f;
         life-=1;
+        system("aplay -c 1 -t wav -q ./sound/player_hurt_2.wav&");
         if(life==0)
         {
             fscore = score;
@@ -227,6 +233,7 @@ void tick_elements() {
 
         if(ball.gstate==1 && rings[i].position.x-rings[i].radius > ball.position.x && rings[i].position.x-rings[i].radius <= ball.position.x+ball.width  && rings[i].position.y>=ball.position.y && rings[i].position.y<ball.position.y+ball.height)
         {
+            system("aplay -c 1 -t wav -q ./sound/hurrah_fall.wav&");
             ball.gstate=0;
             ball.invincible=1;
         }
@@ -309,10 +316,12 @@ void tick_elements() {
             if(powerups[i].type == 1)
             {
                 life+=1;
+                system("aplay -c 1 -t wav -q ./sound/resurrect.wav&");
                 lives.push_back(Health(0.05*(life),0.95));
             }
             else
             {
+                system("aplay -c 1 -t wav -q ./sound/achievement_complete.wav&");
                 ball.shieldtime = tm;
                 ball.invincible = 1;
             }
@@ -349,7 +358,12 @@ void tick_elements() {
 
     //FireBeam
     if( int(tm*100)%1000 == 0)
+    {
        firebeams.push_back(Firebeam(0.05f,0.9f,1,COLOR_DARKGRAY));
+        system("aplay -c 1 -t wav -q ./sound/laser_warning.wav&");
+
+    }
+
     for(int i=0;i<(int)(firebeams).size();i++)
     {
         firebeams[i].tick();
@@ -426,6 +440,7 @@ void tick_elements() {
         c.width = c.height = coins[i].radius*2;
         if(detect_collision(b,c))
         {
+            system("aplay -c 1 -t wav -q ./sound/coin_pickup_1.wav&");
             coins.erase(coins.begin()+i);
             if(coins[i].type==0)
                 score+=1;
