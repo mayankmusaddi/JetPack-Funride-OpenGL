@@ -14,7 +14,7 @@ This is a game similar to the Jetpack Joyride where in the player has a jetpack 
   - Magnets which will attract the player towards itself and hamper its movement
   - Ring Bridge which is allow the player to slide along it to avoid enemies
 
-### Installation
+# Installation
 
 Jetpack Funride requires C++ and OpenGl to run.
 The following development packages of the following libraries should be installed:
@@ -42,7 +42,7 @@ Use the equivalent of apt search or dnf search and make sure you install the dev
 ### Driver Issues
 If you do face driver issues, try to update your drivers. If you continue facing issues even after installing, I suggest you update your operating system to the latest stable release. You can also try building the libraries, but it would be a waste of time IMO.
 
-### How to Run
+# How to Run
 
 To run, clone the directory, make sure all the required packages are installed, then type the following commands, inside the cloned directory.
 
