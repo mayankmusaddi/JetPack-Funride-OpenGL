@@ -10,6 +10,7 @@ public:
     Viserion(float x, float y);
     glm::vec3 position;
     float rotation;
+    float radius;
     float width;
     float height;
     double spawntime;
@@ -17,15 +18,12 @@ public:
     void set_position(float x, float y);
     void move();
     void tick();
-    void hit();
 private:
+    VAO *object;
     VAO *object1;
     VAO *object2;
     VAO *object3;
     VAO *object4;
-    VAO *object5;
-    VAO *object6;
-    VAO *object7;
 };
 
 #endif // VISERION_H

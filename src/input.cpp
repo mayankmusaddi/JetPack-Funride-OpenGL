@@ -110,7 +110,7 @@ void scroll_callback(GLFWwindow *window, double xoffset, double yoffset) {
         screen_zoom +=0.1;
         reset_screen();
     }
-    else if(yoffset==-1 && screen_zoom>1)
+    else if(yoffset==-1 && screen_zoom>1 && (screen_center_x+1)/screen_zoom <1 && (screen_center_y+1)/screen_zoom < 1)
     {
         screen_zoom -=0.1;
         if(screen_zoom<=1)

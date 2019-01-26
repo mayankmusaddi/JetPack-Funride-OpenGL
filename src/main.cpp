@@ -13,9 +13,7 @@
 #include "health.h"
 #include "viserion.h"
 #include "ice.h"
-// #include "digit.h"
 // Include any new component here
-#include <cstdlib> // for rand() function
 
 using namespace std;
 
@@ -26,6 +24,8 @@ GLFWwindow *window;
 long long dist=0;
 long long score=0;
 long long life=5;
+long long fscore=0;
+long long fdist=0;
 
 Timer timer;
 Ball ball;
@@ -143,11 +143,9 @@ void tick_input(GLFWwindow *window) {
     if (space && ball.position.y < 0.9f) {
         ball.move_up();
     }
-    if(down) {
-        ball.position.y-=0.01f;
-    }
-    if(up){
+    if(up && score > 0){
         waters.push_back(Water(ball.position.x+ball.width,ball.position.y+ball.height));
+        score-=1;
     }
 }
 
@@ -157,6 +155,13 @@ void die(){
         ball.position.x=0;
         ball.position.y=-0.1f;
         life-=1;
+        if(life==0)
+        {
+            fscore = score;
+            fdist = dist/10;
+            life=-100;
+        }
+
         lives.pop_back();
     }
 }
@@ -191,10 +196,7 @@ void tick_elements() {
         c.height = ices[i].radius*2;
 
         if(detect_collision(b,c))
-        {
             die();
-            cout << "Life : " << life << " KHALLLLLLLLLLLAAAAAAAS\n";
-        }
     }
 
     //Viserion
@@ -203,7 +205,7 @@ void tick_elements() {
     for(int i=0;i<(int)(viserions).size();i++)
     {
         viserions[i].tick();
-        if((tm - viserions[i].spawntime) > 0.3)
+        if((tm - viserions[i].spawntime) > 0.5)
         {
             viserions[i].spawntime = tm;
             ices.push_back(Ice(viserions[i].position.x,viserions[i].position.y));
@@ -289,7 +291,7 @@ void tick_elements() {
     }
     
     //Powerups
-    if(tm-ball.shieldtime > 3)
+    if(tm-ball.shieldtime > 3 && ball.gstate)
         ball.invincible =0;
     if( dist%240 == 0)
        powerups.push_back(Powerup(1.0,0.9,rand()%2));
@@ -308,14 +310,11 @@ void tick_elements() {
             {
                 life+=1;
                 lives.push_back(Health(0.05*(life),0.95));
-                cout << "Life : " << life << " Life Increased\n";
             }
             else
             {
-                score+=100;
                 ball.shieldtime = tm;
                 ball.invincible = 1;
-                cout << "Score : " << score  << " Score Increased\n";
             }
             
         }
@@ -342,10 +341,7 @@ void tick_elements() {
         r.width = abs(l.x2-l.x1);
         r.height = abs(l.y2-l.y1);
         if( detect_collision(b,r) && detect_collision(b,l))
-        {
             die();
-            cout << "Life : " << life  << " DEADDDDDDDDDDDDDDDDDd" << endl;
-        }
 
         if( boomerangs[i].position.x > 1)
             boomerangs.erase(boomerangs.begin()+i);
@@ -365,10 +361,7 @@ void tick_elements() {
         fb.height = 0.06f;
 
         if( detect_collision(b,fb) && tm - firebeams[i].spawnTime > 1.5 && firebeams[i].state )
-        {
             die();
-            cout << "Life : " << life  << " Distance : " << dist << endl;
-        }
 
         if( tm - firebeams[i].spawnTime > 3)
             firebeams.erase(firebeams.begin()+i);
@@ -394,10 +387,7 @@ void tick_elements() {
         fl.height = abs(l.y2-l.y1);
 
         if( detect_collision(b,fl) && detect_collision(b,l) && firelines[i].state)
-        {
             die();
-            cout << "Life : " << life  << " Distance : " << dist << endl;
-        }
 
         if(firelines[i].position.x < -0.3f)
             firelines.erase(firelines.begin()+i);
@@ -499,7 +489,11 @@ int main(int argc, char **argv) {
             draw();
             // Swap Frame Buffer in double buffering
             glfwSwapBuffers(window);
-            glfwSetWindowTitle(window,"ABC");
+
+            string sc = (life<=0)?":::: GAME OVER ::::       Final Score : "+to_string(fscore)+ " Distance : "+to_string(fdist):"Score : "+to_string(score)+" Distance : "+to_string(dist/10);
+            char scr[1000];
+            strcpy(scr,sc.c_str());
+            glfwSetWindowTitle(window,scr);
 
             tick_elements();
             tick_input(window);
